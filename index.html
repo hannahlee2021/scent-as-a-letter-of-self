@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scent as a letter of self</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+</head>
+<body>
+
+
+  
+
+
+
+    <form id="text1">
+        <div class = "text-cont">
+            <div class = "label-under"></div>
+            <label for="textbox" id="textbox-label"><h1>write a letter to my scent</h1></label>
+            <input type = "text" name="textbox" id = "textbox" required>
+            <button type = "submit" name="submit" id = "submit"><h2>send~</h2></button>
+        </div>
+
+
+      
+
+
+    </form>
+    <div class = "letters-cont">
+        
+        <div id = "letters" class = "hidden">
+           <img src = "media/letters-pic-bg.png">
+          
+        </div>
+        <!-- <audio id = "audio" autoplay>
+            <source src = "media/letter-audios.mp3" type="audio/mp3"></source>
+        </audio> -->
+    </div>
+    
+    <script src="sketch.js"></script>
+    <script>
+
+        document.getElementById('text1').addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+             const inputText = document.getElementById('textbox').value;
+
+    if (inputText && inputText.trim() !== "") {
+
+        console.log(`form submitted with text: ${inputText}`);
+
+       
+        insta1.push(new Insta
+          (random(windowWidth), 
+          random(windowHeight), 
+          inputText
+     ));
+         console.log(inputText);
+         document.getElementById('textbox').value = '';
+    }
+           
+ e.preventDefault();
+
+})
+    </script>
+</body>
+
+</html>

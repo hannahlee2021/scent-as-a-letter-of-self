@@ -1,0 +1,131 @@
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    /* padding-left: -20px;
+    padding-right: 20px; */
+}
+
+h1 {
+    font-family: 'Ballet', cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 100px;
+    color: red;
+}
+
+h2 {
+    font-family: 'Ballet', cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+#text1 {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    z-index:10;
+}
+
+.label-under {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+
+    border-width: 1px;
+    border-radius: 50%;
+    border-color: white;
+    background-color: white;
+    border-style: solid;
+    
+}
+
+.text-cont {
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-cont #textbox-label {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+    height: 50%;
+    z-index: 2;
+}
+
+
+
+.text-cont #textbox {
+    position: relative;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid red;
+
+    font-family: 'Ballet', cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+   
+}
+
+.text-cont #textbox:focus {
+    outline: none;
+    border: 1px dashed black;
+}
+
+.text-cont #submit {
+    position: relative;
+    top: 40px;
+    border-radius: 50%;
+    border: 1px dashed white;
+    background-color: red;
+    height: 100%;
+    width: 30%;
+    
+}
+
+.text-cont #submit:visited {
+    text-decoration: none;
+}
+
+.letters-cont {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 5px;
+    border-color: blue;
+    border-style: solid;
+  
+    z-index: 100; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 100%;
+    /* max-width: 800px; */
+    text-align: center;
+}
+#letters {
+    opacity: 0;
+}
+
+#letters img {
+    width: 100%;
+}
+
